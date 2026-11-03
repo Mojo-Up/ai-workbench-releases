@@ -24,6 +24,9 @@ echo "deb [signed-by=/etc/apt/keyrings/mojoup-ai-workbench.gpg] https://github.c
 sudo apt update && sudo apt install mju-ai-workbench-desktop mojoup-node
 ```
 
+The repository's key is Mojo Up Releases <releases@mojoup.com.au>, fingerprint
+`7FB0 67B6 3EDC 5582 1898 CF68 AE80 0EB1 C61A 8037`.
+
 Or download from the [latest release](https://github.com/Mojo-Up/ai-workbench-releases/releases/latest)
 or the [Mojo Up portal](https://portal.mojoup.com.au/releases/ai-workbench). Every release carries a
 `SHA256SUMS` over its files. Windows builds are signed with Azure Trusted Signing (signer "Mojo Up"),
