@@ -10,9 +10,18 @@ and people can download every release without an account.
 ```bash
 winget install MojoUp.AIWorkbench                   # Windows
 brew install --cask mojo-up/tap/ai-workbench        # macOS
-yay -S ai-workbench-bin                             # Arch Linux (AUR)
 winget install MojoUp.AIWorkbench.Node              # the node, Windows
 brew install mojo-up/tap/mojoup-node                # the node, macOS or Linux
+```
+
+Debian and Ubuntu: an APT repository, served from this repository's `apt` release, keeps both
+current with `apt upgrade`:
+
+```bash
+sudo install -d -m 755 /etc/apt/keyrings
+curl -fsSL https://github.com/Mojo-Up/ai-workbench-releases/releases/download/apt/mojoup-archive-keyring.gpg | sudo tee /etc/apt/keyrings/mojoup-ai-workbench.gpg >/dev/null
+echo "deb [signed-by=/etc/apt/keyrings/mojoup-ai-workbench.gpg] https://github.com/Mojo-Up/ai-workbench-releases/releases/download/apt ./" | sudo tee /etc/apt/sources.list.d/mojoup-ai-workbench.list
+sudo apt update && sudo apt install mju-ai-workbench-desktop mojoup-node
 ```
 
 Or download from the [latest release](https://github.com/Mojo-Up/ai-workbench-releases/releases/latest)
