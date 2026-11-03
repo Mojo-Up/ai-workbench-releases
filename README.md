@@ -20,6 +20,9 @@ or the [Mojo Up portal](https://portal.mojoup.com.au/releases/ai-workbench). Eve
 `SHA256SUMS` over its files. Windows builds are signed with Azure Trusted Signing (signer "Mojo Up"),
 Mac builds with a Developer ID and notarised by Apple.
 
+AI Workbench is free to use and not open source: see [LICENSE](LICENSE). Mojo Up's services are
+under the [terms of service](https://mojoup.ai/terms).
+
 Documentation: <https://docs.mojoup.ai>. Release notes: <https://docs.mojoup.ai/release-notes/ai-workbench/>.
 
 ## Issues
